@@ -1,10 +1,10 @@
 public class CuentaBancaria {
-    private String titutar;
+    private String titular;
     private double saldoActual;
     private String numeroCuenta;
 
-    public CuentaBancaria(String titutar, double saldoActual, String numeroCuenta) {
-        this.titutar = titutar;
+    public CuentaBancaria(String titular, double saldoActual, String numeroCuenta) {
+        this.titular = titular;
         if (saldoActual >= 0) {
             this.saldoActual = saldoActual;
         }else {
@@ -14,12 +14,12 @@ public class CuentaBancaria {
         this.numeroCuenta = numeroCuenta;
     }
 
-    public String getTitutar() {
-        return titutar;
+    public String gettitular() {
+        return titular;
     }
 
-    public void setTitutar(String titutar) {
-        this.titutar = titutar;
+    public void setTitular(String titular) {
+        this.titular = titular;
     }
 
     public double getSaldoActual() {
@@ -63,8 +63,9 @@ public class CuentaBancaria {
     }
 
     public void mostrar(){
-        System.out.println("Titutar: " + titutar);
+        System.out.println("titular: " + titular);
         System.out.println("Numero Cuenta: " + numeroCuenta);
         System.out.println("Saldo: $" + saldoActual);
     }
 }
+
